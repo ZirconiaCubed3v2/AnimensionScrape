@@ -16,8 +16,8 @@ options.binary_location = brave
 options.add_argument("--remote-debugging-port=9224")
 browser = webdriver.Chrome(service=service, options=options)
 
-fileNameFormat = ""
-animensionURL = ""
+fileNameFormat = "" # put the filename format for the downloads here, first %s is episode number, second %s is resolution (1080p, 720p, 480p, etc)
+animensionURL = "" # put the url for the show's page here
 
 def formatString(string):
     return string.lower().replace("download ", "").replace(" - mp4)", "")[1:]
